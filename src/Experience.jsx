@@ -19,7 +19,7 @@ export default function Experience() {
 
 	return (
 		<>
-			<Perf openByDefault trackGPU={true} position='top-left' />
+			{/* <Perf openByDefault trackGPU={true} position='top-left' /> */}
 			<Environment  preset='forest' backgroundBlurriness={0.14}/>
 			<ReflectiveTriangles count={500} size={2.5} />
 			<Stars radius={100} depth={50} count={5000} factor={4} saturation={0} fade speed={2} />
