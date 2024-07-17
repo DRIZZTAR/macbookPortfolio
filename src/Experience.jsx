@@ -19,11 +19,11 @@ export default function Experience() {
 
 	return (
 		<>
-			{/* <Perf openByDefault trackGPU={true} position='top-left' /> */}
+			<Perf openByDefault trackGPU={true} position='top-left' />
 			<Environment  preset='forest' backgroundBlurriness={0.14}/>
-			<ReflectiveTriangles count={500} size={2.5} />
+			<ReflectiveTriangles count={500} size={3} />
 			<Stars radius={100} depth={50} count={5000} factor={4} saturation={0} fade speed={2} />
-			<ContactShadows position-y={-1.4} opacity={0.4} scale={5} blur={2.4} />
+			<ContactShadows position-y={-1.4} opacity={0.4} scale={6} blur={1.4} />
 
 			<PresentationControls
 				global
@@ -57,12 +57,19 @@ export default function Experience() {
 
 					<Text
 						font='./raleway.woff'
-						color={'#dddddd'}
+						color={'#ffffff'}
 						fontSize={0.5}
 						position={[2, 0.75, 0.75]}
 						rotation-y={-1.25}
 						maxWidth={2.0}
 						textAlign='center'
+						outlineOffsetX={0.5}
+						outlineOffsetY={0.3}
+						outlineBlur={1}
+						outlineOpacity={0.2}
+						outlineWidth={0.8}
+						outlineColor={'#010101'}
+
 					>
 						Tyson Skakun
 					</Text>
