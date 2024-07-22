@@ -20,9 +20,8 @@ export default function Experience() {
 	return (
 		<>
 			{/* <Perf openByDefault trackGPU={true} position='top-left' /> */}
-			<Environment  preset='forest' backgroundBlurriness={0.14}/>
-			<ReflectiveTriangles count={500} size={3} />
-			<Stars radius={100} depth={50} count={5000} factor={4} saturation={0} fade speed={2} />
+			<ReflectiveTriangles count={250} size={3} />
+			<Stars radius={100} depth={50} count={3000} factor={4} saturation={0} fade speed={2} />
 			<ContactShadows position-y={-1.4} opacity={0.4} scale={6} blur={1.4} />
 
 			<PresentationControls
@@ -69,11 +68,12 @@ export default function Experience() {
 						outlineOpacity={0.2}
 						outlineWidth={0.8}
 						outlineColor={'#010101'}
-
 					>
 						Tyson Skakun
 					</Text>
 				</Float>
+
+				<Environment preset='forest' backgroundBlurriness={0.14} />
 			</PresentationControls>
 		</>
 	);

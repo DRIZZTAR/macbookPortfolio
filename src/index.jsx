@@ -4,18 +4,7 @@ import { Canvas } from '@react-three/fiber';
 import { Suspense } from 'react';
 import { Html, useProgress } from '@react-three/drei';
 import Experience from './Experience.jsx';
-
-const Loader = () => {
-	const { progress } = useProgress();
-	return (
-		<Html center className='loader-container'>
-			<div className='loader'>
-				<div className='spinner'></div>
-				<p className='loading-text'>Loading {progress.toFixed(0)}%</p>
-			</div>
-		</Html>
-	);
-};
+import { Loader } from './components/Loader.jsx';
 
 const root = ReactDOM.createRoot(document.querySelector('#root'));
 
